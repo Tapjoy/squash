@@ -40,7 +40,7 @@ gem 'omniauth-tapjoy'
 gem 'jira-ruby', require: 'jira'
 
 # DOGFOOD
-gem 'squash_ruby', require: 'squash/ruby'
+gem 'squash_ruby', git: 'https://github.com/Tapjoy/squash-ruby.git', require: 'squash/ruby'
 gem 'squash_rails', require: 'squash/rails'
 gem 'squash_ios_symbolicator', require: 'squash/symbolicator'
 gem 'squash_javascript', require: 'squash/javascript'

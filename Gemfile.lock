@@ -20,6 +20,13 @@ GIT
     git (1.2.5)
 
 GIT
+  remote: https://github.com/Tapjoy/squash-ruby.git
+  revision: 2db88be35eacd356873f5a4973449ac65d8974c0
+  specs:
+    squash_ruby (1.0.0)
+      json
+
+GIT
   remote: https://github.com/rails/rails.git
   revision: a3aca81b21f793e8869440e9e84ead80c2479e3d
   branch: 3-2-stable
@@ -228,8 +235,6 @@ GEM
       squash_uploader
     squash_rails (1.0.0)
       squash_ruby
-    squash_ruby (1.0.0)
-      json
     squash_uploader (1.0.0)
       json
     stringex (1.5.1)
@@ -298,7 +303,7 @@ DEPENDENCIES
   squash_java
   squash_javascript
   squash_rails
-  squash_ruby
+  squash_ruby!
   therubyracer (>= 0.11.1)
   therubyrhino (< 2.0)
   uglifier
