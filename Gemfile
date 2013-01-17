@@ -34,6 +34,7 @@ gem 'jruby-openssl', platform: :jruby
 
 # AUTH
 gem 'net-ldap', require: 'net/ldap'
+gem 'omniauth-tapjoy'
 
 # INTEGRATION
 gem 'jira-ruby', require: 'jira'

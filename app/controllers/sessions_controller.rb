@@ -102,4 +102,14 @@ class SessionsController < ApplicationController
     log_out
     redirect_to login_url, notice: t('controllers.sessions.destroy.logged_out')
   end
+
+  def oauth
+    user_info = request.env['omniauth.auth']['info']
+    render text: 'You must be an employee' unless user_info['is_employee'] == true
+    log_in_user User.where(username: user_info['email']).create_or_update!({
+      first_name: user_info['first_name'],
+      last_name: user_info['last_name'],
+    }, as: :system)
+    redirect_to(params[:next].presence || root_url)
+  end
 end
