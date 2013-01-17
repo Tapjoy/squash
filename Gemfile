@@ -1,7 +1,7 @@
 source :rubygems
 
 # FRAMEWORK
-gem 'rails', git: 'git@github.com:rails/rails.git', branch: '3-2-stable'
+gem 'rails', git: 'https://github.com/rails/rails.git', branch: '3-2-stable'
 # We need to use this branch of Rails because it includes fixes for ActiveRecord
 # and concurrency that we need for our thread-spawning background job paradigm
 # to work
