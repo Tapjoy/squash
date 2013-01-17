@@ -1,5 +1,12 @@
 GIT
-  remote: git://github.com/RISCfuture/has_metadata_column.git
+  remote: https://github.com/RISCfuture/composite_primary_keys.git
+  revision: c947ca9d255a9e5854072b3567c4368d5891cacb
+  specs:
+    composite_primary_keys (5.0.7)
+      activerecord (~> 3.2.0)
+
+GIT
+  remote: https://github.com/RISCfuture/has_metadata_column.git
   revision: 2aebf034ab97365cfbf56073c24c3a28fe2dc4ae
   specs:
     has_metadata_column (1.0.3)
@@ -7,14 +14,7 @@ GIT
       rails (>= 3.0)
 
 GIT
-  remote: git@github.com:RISCfuture/composite_primary_keys.git
-  revision: c947ca9d255a9e5854072b3567c4368d5891cacb
-  specs:
-    composite_primary_keys (5.0.7)
-      activerecord (~> 3.2.0)
-
-GIT
-  remote: git@github.com:RISCfuture/ruby-git.git
+  remote: https://github.com/RISCfuture/ruby-git.git
   revision: 473d8ecc1fd49cbfcbabff0061484319d4bac9fa
   specs:
     git (1.2.5)
