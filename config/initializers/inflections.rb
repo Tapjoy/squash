@@ -16,4 +16,5 @@
 
 ActiveSupport::Inflector.inflections do |inflect|
    inflect.singular 'statuses', 'status'
+   inflect.acronym 'OAuth'
 end
