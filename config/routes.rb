@@ -57,6 +57,7 @@ Squash::Application.routes.draw do
   post 'login' => 'sessions#create'
   get 'logout' => 'sessions#destroy'
   post 'signup' => 'users#create' if Squash::Configuration.authentication.strategy == 'password'
+  get '/auth/tapjoy/callback' => 'sessions#oauth'
 
   post 'api/1.0/notify' => 'api/v1#notify'
   post 'api/1.0/deploy' => 'api/v1#deploy'

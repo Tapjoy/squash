@@ -30,7 +30,11 @@ module Views
         modal_section do
           title_section
           div(class: 'body-portion') do
-            login_form
+            if Squash::Configuration.authentication.strategy == 'oauth'
+              oauth_form
+            else
+              login_form
+            end
             if Squash::Configuration.authentication.strategy == 'password'
               signup_form
             end
@@ -43,6 +47,12 @@ module Views
       def title_section
           h1 "Log in to Squash"
           p "Use your LDAP credentials to log in." if Squash::Configuration.authentication.strategy == 'ldap'
+      end
+
+      def oauth_form
+        div(class: 'row') do
+          a 'Log in via OAuth', href: '/auth/tapjoy'
+        end
       end
 
       def login_form
