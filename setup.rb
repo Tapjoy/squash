@@ -289,7 +289,7 @@ if step < 2
   say
   say "Now we'll cover authentication.".bold
 
-  auth = choose("How will users authenticate to Squash?", %w(password LDAP))
+  auth = choose("How will users authenticate to Squash?", %w(oauth password LDAP))
   if auth == 'LDAP'
     ldap_host  = query("What's the hostname of your LDAP server?")
     ldap_ssl   = prompt("Is your LDAP service using SSL?")
